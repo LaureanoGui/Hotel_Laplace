@@ -1,100 +1,130 @@
 @charset "utf-8";
+
 /* CSS Document */
 body {
-    font-family:"Comic Sans MS", cursive; 
-    font-size: 16px;
-    color: #3b3b3b; 
+	font-family: "Arial" bra;
+	font-size: 16px;
+	color: #3b3b3b;
 	background-color: #FFF;
-    margin: 0; /* Removido margem padrão do body */
+	margin: 0;
+	/* Removido margem padrão do body */
 }
 
 #geral_home {
-    max-width: 100%; /* Definido a largura máxima para 100% */
-    height: auto; /* Altura automática para se adaptar ao conteúdo */
+	max-width: 100%;
+	/* Definido a largura máxima para 100% */
+	height: auto;
+	/* Altura automática para se adaptar ao conteúdo */
 }
 
 .topo_home {
-    width: 100%; /* Largura ajustada para 100% */
-    height: 350px;
-    background:url(imagens/R.jpeg) center/cover; /* Adicionada propriedade de background-size para cobrir todo o elemento */
-	
-    border: #06C solid 5px; /* Atalho para definir todas as bordas iguais */
+	width:100%;
+	/* Largura ajustada para 100% */
+	height: 350px;
+	/*background:url(imagens/R.jpeg) center/cover; /* Adicionada propriedade de background-size para cobrir todo o elemento */
+
+	border: #06C solid 5px;
+	/* Atalho para definir todas as bordas iguais */
 }
+
 .logo {
-	position: absolute; /* Alterado para posição absoluta */
-	top: 193px; /* Posicionando a logo a 40px do topo */
-	left: 71px; /* Posicionando a logo a 15px da esquerda */
-	background: url(imagens/3Hotel-Building.png);
+	position: absolute;
+	/* Alterado para posição absoluta */
+	top: 150px;
+	/* Posicionando a logo a 150px do topo */
+	left: 70px;
+	/* Posicionando a logo a 71px da esquerda */
 	width: 252px;
 	height: 214px;
 	background-repeat: no-repeat;
-	z-index: 2; /* Definindo uma camada superior para a logo */
+	z-index: 2;
+	/* Definindo uma camada superior para a logo */
 }
-.tituloSite{
+
+.tituloSite {
 	position: absolute;
 	top: 244px;
 	left: 333px;
 	font: bold;
 	z-index: 3;
 	color: #FFF;
-	text-shadow: 2px 2px 4px rgba(102,102,102,1);
+	text-shadow: 2px 2px 4px rgba(102, 102, 102, 1);
 	font-size: 100px;
 }
-.tituloTexto{
+
+.tituloTexto {
 	font-size: 30px;
 	font: bold;
 }
+
 .texto {
-	 text-align: justify;
-	 text-indent: 20px;
-	 max-width: 2000px; /* Define a largura máxima da caixa de texto */
-    max-height: 800px; /* Define a altura máxima da caixa de texto */
-    overflow: auto;
-	position:relative;
-	right:150px;
+	text-align: center;
+	text-indent: 20px;
+	max-width: fit-content;
+	/* Define a largura máxima da caixa de texto */
+	max-height: fit-content;
+	/* Define a altura máxima da caixa de texto */
+	overflow: hidden;
+	position: relative;
+	right: 150px;
 }
+
 .img1 {
-	width: 40%; /* Define a largura da imagem como 50% do tamanho original */
-    height: auto;
-	display: block; /* Define a imagem como bloco para poder aplicar margens */
-    margin: 0 auto; /* Define margens automáticas para centralizar horizontalmente */
+	width: 40%;
+	/* Define a largura da imagem como 50% do tamanho original */
+	height: auto;
+	display: block;
+	/* Define a imagem como bloco para poder aplicar margens */
+	margin: 0 auto;
+	/* Define margens automáticas para centralizar horizontalmente */
 	margin-right: 250px;
 	margin-left: 80px;
 }
+
 .container {
-        display: flex; /* Usando flexbox para alinhar os itens horizontalmente */
-        align-items: center; /* Alinha verticalmente os itens ao centro */
-		position:relative;
-		margin: 0 auto;
-		top: 100px;
+	display: flex;
+	/* Usando flexbox para alinhar os itens horizontalmente */
+	align-items: center;
+	/* Alinha verticalmente os itens ao centro */
+	position: relative;
+	margin: 0 auto;
+	top: 100px;
 }
+
 .menu {
-    width: 100%; /* Largura ajustada para 100% */
-    height: 50px;
-	font-family:"Lucida Console", Monaco, monospace;
-    font: bold 50px; /* Atalho para definir a fonte */
-    background: url(imagens/barra_menu.jpg);
+	width: 100%;
+	/* Largura ajustada para 100% */
+	height: 50px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font: bold 50px;
+	/* Atalho para definir a fonte */
+	background: url(imagens/barra_menu.jpg);
 }
 
 .menu ul {
-    padding: 0; /* Removida a margem interna padrão da lista */
-	text-align:center;
+	padding: 0;
+	/* Removida a margem interna padrão da lista */
+	text-align: center;
 }
 
 .menu ul li {
-    display: inline-block; /* Alterado de inline para inline-block para melhor controle do espaçamento */
-    padding: 0 60px; /* Espaçamento horizontal entre os itens do menu */
-    margin: 15px 0; /* Espaçamento vertical entre os itens do menu */
+	display: inline-block;
+	/* Alterado de inline para inline-block para melhor controle do espaçamento */
+	padding: 0 60px;
+	/* Espaçamento horizontal entre os itens do menu */
+	margin: 15px 0;
+	/* Espaçamento vertical entre os itens do menu */
+	margin-left: auto;
 }
 
 .menu ul li a {
-    text-decoration: none;
-    color: #FFF;
-	text-shadow:2px 2px 4px rgba(0,0,0,1);
+	text-decoration: none;
+	color: #FFF;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .menu ul li a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .menu ul li a.active {
@@ -104,9 +134,12 @@ body {
 
 /* Media query para ajustar o menu em telas menores */
 @media screen and (max-width: 768px) {
-    .menu ul li {
-        display: block; /* Alterado para blocos para empilhar os itens verticalmente */
-        padding: 10px 0; /* Espaçamento entre os itens do menu */
-        text-align: center; /* Centralizar o texto */
-    }
+	.menu ul li {
+		display: block;
+		/* Alterado para blocos para empilhar os itens verticalmente */
+		padding: 10px 0;
+		/* Espaçamento entre os itens do menu */
+		text-align: center;
+		/* Centralizar o texto */
+	}
 }
